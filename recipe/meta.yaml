@@ -22,6 +22,7 @@ requirements:
     - ghostscript
     - python {{ python_min }}
     - pip
+    - setuptools
   run:
     - ghostscript
     - python >={{ python_min }}
