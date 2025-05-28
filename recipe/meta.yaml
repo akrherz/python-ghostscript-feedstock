@@ -26,7 +26,6 @@ requirements:
   run:
     - ghostscript
     - python >={{ python_min }}
-    - setuptools
 
 test:
   imports:
