@@ -1,5 +1,5 @@
 {% set name = "python-ghostscript" %}
-{% set version = "0.7" %}
+{% set version = "0.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://gitlab.com/pdftools/python-ghostscript/-/archive/v{{ version }}/{{ name }}-v{{ version }}.tar.bz2
-  sha256: c718262002a68b3ea0b8b685a950fee6c4da82ef7e2def2e28dc0f2a58f912bf
+  sha256: 4132929c7fd26a05ce2e874d3e22987770973d3c5c60c189c92f31da19ebda65
   patches:
     # hardcode dllpath on windows
     - windll_path.patch
@@ -15,7 +15,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
